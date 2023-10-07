@@ -1,0 +1,380 @@
+ERROR - 2023-10-06 08:48:36 --> Error connecting to the database: mysqli_sql_exception: No connection could be made because the target machine actively refused it in C:\xampp\htdocs\ServizioSociale\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php:184
+Stack trace:
+#0 C:\xampp\htdocs\ServizioSociale\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php(184): mysqli->real_connect('localhost', 'admin', Object(SensitiveParameterValue), 'codeigniter4_ap...', 3306, '', 0)
+#1 C:\xampp\htdocs\ServizioSociale\vendor\codeigniter4\framework\system\Database\BaseConnection.php(391): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#2 C:\xampp\htdocs\ServizioSociale\vendor\codeigniter4\framework\system\Database\Database.php(66): CodeIgniter\Database\BaseConnection->initialize()
+#3 C:\xampp\htdocs\ServizioSociale\vendor\codeigniter4\framework\system\Database\Config.php(108): CodeIgniter\Database\Database->loadForge(Object(CodeIgniter\Database\MySQLi\Connection))
+#4 C:\xampp\htdocs\ServizioSociale\vendor\codeigniter4\framework\system\Database\Seeder.php(97): CodeIgniter\Database\Config::forge(NULL)
+#5 C:\xampp\htdocs\ServizioSociale\vendor\codeigniter4\framework\system\Commands\Database\Seed.php(69): CodeIgniter\Database\Seeder->__construct(Object(Config\Database))
+#6 C:\xampp\htdocs\ServizioSociale\vendor\codeigniter4\framework\system\CLI\Commands.php(65): CodeIgniter\Commands\Database\Seed->run(Array)
+#7 C:\xampp\htdocs\ServizioSociale\vendor\codeigniter4\framework\system\CLI\Console.php(37): CodeIgniter\CLI\Commands->run('db:seed', Array)
+#8 C:\xampp\htdocs\ServizioSociale\spark(102): CodeIgniter\CLI\Console->run()
+#9 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: No connection could be made because the target machine actively refused it in C:\xampp\htdocs\ServizioSociale\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php:229
+Stack trace:
+#0 C:\xampp\htdocs\ServizioSociale\vendor\codeigniter4\framework\system\Database\BaseConnection.php(391): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 C:\xampp\htdocs\ServizioSociale\vendor\codeigniter4\framework\system\Database\Database.php(66): CodeIgniter\Database\BaseConnection->initialize()
+#2 C:\xampp\htdocs\ServizioSociale\vendor\codeigniter4\framework\system\Database\Config.php(108): CodeIgniter\Database\Database->loadForge(Object(CodeIgniter\Database\MySQLi\Connection))
+#3 C:\xampp\htdocs\ServizioSociale\vendor\codeigniter4\framework\system\Database\Seeder.php(97): CodeIgniter\Database\Config::forge(NULL)
+#4 C:\xampp\htdocs\ServizioSociale\vendor\codeigniter4\framework\system\Commands\Database\Seed.php(69): CodeIgniter\Database\Seeder->__construct(Object(Config\Database))
+#5 C:\xampp\htdocs\ServizioSociale\vendor\codeigniter4\framework\system\CLI\Commands.php(65): CodeIgniter\Commands\Database\Seed->run(Array)
+#6 C:\xampp\htdocs\ServizioSociale\vendor\codeigniter4\framework\system\CLI\Console.php(37): CodeIgniter\CLI\Commands->run('db:seed', Array)
+#7 C:\xampp\htdocs\ServizioSociale\spark(102): CodeIgniter\CLI\Console->run()
+#8 {main}
+CRITICAL - 2023-10-06 08:48:36 --> Unable to connect to the database.
+Main connection [MySQLi]: No connection could be made because the target machine actively refused it
+in SYSTEMPATH\Database\BaseConnection.php on line 427.
+ 1 SYSTEMPATH\Database\Database.php(66): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH\Database\Config.php(108): CodeIgniter\Database\Database->loadForge(Object(CodeIgniter\Database\MySQLi\Connection))
+ 3 SYSTEMPATH\Database\Seeder.php(97): CodeIgniter\Database\Config::forge(null)
+ 4 SYSTEMPATH\Commands\Database\Seed.php(69): CodeIgniter\Database\Seeder->__construct(Object(Config\Database))
+ 5 SYSTEMPATH\CLI\Commands.php(65): CodeIgniter\Commands\Database\Seed->run([...])
+ 6 SYSTEMPATH\CLI\Console.php(37): CodeIgniter\CLI\Commands->run('db:seed', [...])
+ 7 ROOTPATH\spark(102): CodeIgniter\CLI\Console->run()
+ERROR - 2023-10-06 08:49:19 --> Error connecting to the database: mysqli_sql_exception: Access denied for user 'admin'@'localhost' (using password: YES) in C:\xampp\htdocs\ServizioSociale\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php:184
+Stack trace:
+#0 C:\xampp\htdocs\ServizioSociale\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php(184): mysqli->real_connect('localhost', 'admin', Object(SensitiveParameterValue), 'codeigniter4_ap...', 3306, '', 0)
+#1 C:\xampp\htdocs\ServizioSociale\vendor\codeigniter4\framework\system\Database\BaseConnection.php(391): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#2 C:\xampp\htdocs\ServizioSociale\vendor\codeigniter4\framework\system\Database\Database.php(66): CodeIgniter\Database\BaseConnection->initialize()
+#3 C:\xampp\htdocs\ServizioSociale\vendor\codeigniter4\framework\system\Database\Config.php(108): CodeIgniter\Database\Database->loadForge(Object(CodeIgniter\Database\MySQLi\Connection))
+#4 C:\xampp\htdocs\ServizioSociale\vendor\codeigniter4\framework\system\Database\Seeder.php(97): CodeIgniter\Database\Config::forge(NULL)
+#5 C:\xampp\htdocs\ServizioSociale\vendor\codeigniter4\framework\system\Commands\Database\Seed.php(69): CodeIgniter\Database\Seeder->__construct(Object(Config\Database))
+#6 C:\xampp\htdocs\ServizioSociale\vendor\codeigniter4\framework\system\CLI\Commands.php(65): CodeIgniter\Commands\Database\Seed->run(Array)
+#7 C:\xampp\htdocs\ServizioSociale\vendor\codeigniter4\framework\system\CLI\Console.php(37): CodeIgniter\CLI\Commands->run('db:seed', Array)
+#8 C:\xampp\htdocs\ServizioSociale\spark(102): CodeIgniter\CLI\Console->run()
+#9 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: Access denied for user '****'@'localhost' (using password: YES) in C:\xampp\htdocs\ServizioSociale\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php:229
+Stack trace:
+#0 C:\xampp\htdocs\ServizioSociale\vendor\codeigniter4\framework\system\Database\BaseConnection.php(391): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 C:\xampp\htdocs\ServizioSociale\vendor\codeigniter4\framework\system\Database\Database.php(66): CodeIgniter\Database\BaseConnection->initialize()
+#2 C:\xampp\htdocs\ServizioSociale\vendor\codeigniter4\framework\system\Database\Config.php(108): CodeIgniter\Database\Database->loadForge(Object(CodeIgniter\Database\MySQLi\Connection))
+#3 C:\xampp\htdocs\ServizioSociale\vendor\codeigniter4\framework\system\Database\Seeder.php(97): CodeIgniter\Database\Config::forge(NULL)
+#4 C:\xampp\htdocs\ServizioSociale\vendor\codeigniter4\framework\system\Commands\Database\Seed.php(69): CodeIgniter\Database\Seeder->__construct(Object(Config\Database))
+#5 C:\xampp\htdocs\ServizioSociale\vendor\codeigniter4\framework\system\CLI\Commands.php(65): CodeIgniter\Commands\Database\Seed->run(Array)
+#6 C:\xampp\htdocs\ServizioSociale\vendor\codeigniter4\framework\system\CLI\Console.php(37): CodeIgniter\CLI\Commands->run('db:seed', Array)
+#7 C:\xampp\htdocs\ServizioSociale\spark(102): CodeIgniter\CLI\Console->run()
+#8 {main}
+CRITICAL - 2023-10-06 08:49:19 --> Unable to connect to the database.
+Main connection [MySQLi]: Access denied for user '****'@'localhost' (using password: YES)
+in SYSTEMPATH\Database\BaseConnection.php on line 427.
+ 1 SYSTEMPATH\Database\Database.php(66): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH\Database\Config.php(108): CodeIgniter\Database\Database->loadForge(Object(CodeIgniter\Database\MySQLi\Connection))
+ 3 SYSTEMPATH\Database\Seeder.php(97): CodeIgniter\Database\Config::forge(null)
+ 4 SYSTEMPATH\Commands\Database\Seed.php(69): CodeIgniter\Database\Seeder->__construct(Object(Config\Database))
+ 5 SYSTEMPATH\CLI\Commands.php(65): CodeIgniter\Commands\Database\Seed->run([...])
+ 6 SYSTEMPATH\CLI\Console.php(37): CodeIgniter\CLI\Commands->run('db:seed', [...])
+ 7 ROOTPATH\spark(102): CodeIgniter\CLI\Console->run()
+ERROR - 2023-10-06 08:50:30 --> Error connecting to the database: mysqli_sql_exception: Access denied for user 'admin'@'localhost' (using password: YES) in C:\xampp\htdocs\ServizioSociale\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php:184
+Stack trace:
+#0 C:\xampp\htdocs\ServizioSociale\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php(184): mysqli->real_connect('localhost', 'admin', Object(SensitiveParameterValue), 'codeigniter4_ap...', 3306, '', 0)
+#1 C:\xampp\htdocs\ServizioSociale\vendor\codeigniter4\framework\system\Database\BaseConnection.php(391): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#2 C:\xampp\htdocs\ServizioSociale\vendor\codeigniter4\framework\system\Database\Database.php(66): CodeIgniter\Database\BaseConnection->initialize()
+#3 C:\xampp\htdocs\ServizioSociale\vendor\codeigniter4\framework\system\Database\Config.php(108): CodeIgniter\Database\Database->loadForge(Object(CodeIgniter\Database\MySQLi\Connection))
+#4 C:\xampp\htdocs\ServizioSociale\vendor\codeigniter4\framework\system\Database\Seeder.php(97): CodeIgniter\Database\Config::forge(NULL)
+#5 C:\xampp\htdocs\ServizioSociale\vendor\codeigniter4\framework\system\Commands\Database\Seed.php(69): CodeIgniter\Database\Seeder->__construct(Object(Config\Database))
+#6 C:\xampp\htdocs\ServizioSociale\vendor\codeigniter4\framework\system\CLI\Commands.php(65): CodeIgniter\Commands\Database\Seed->run(Array)
+#7 C:\xampp\htdocs\ServizioSociale\vendor\codeigniter4\framework\system\CLI\Console.php(37): CodeIgniter\CLI\Commands->run('db:seed', Array)
+#8 C:\xampp\htdocs\ServizioSociale\spark(102): CodeIgniter\CLI\Console->run()
+#9 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: Access denied for user '****'@'localhost' (using password: YES) in C:\xampp\htdocs\ServizioSociale\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php:229
+Stack trace:
+#0 C:\xampp\htdocs\ServizioSociale\vendor\codeigniter4\framework\system\Database\BaseConnection.php(391): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 C:\xampp\htdocs\ServizioSociale\vendor\codeigniter4\framework\system\Database\Database.php(66): CodeIgniter\Database\BaseConnection->initialize()
+#2 C:\xampp\htdocs\ServizioSociale\vendor\codeigniter4\framework\system\Database\Config.php(108): CodeIgniter\Database\Database->loadForge(Object(CodeIgniter\Database\MySQLi\Connection))
+#3 C:\xampp\htdocs\ServizioSociale\vendor\codeigniter4\framework\system\Database\Seeder.php(97): CodeIgniter\Database\Config::forge(NULL)
+#4 C:\xampp\htdocs\ServizioSociale\vendor\codeigniter4\framework\system\Commands\Database\Seed.php(69): CodeIgniter\Database\Seeder->__construct(Object(Config\Database))
+#5 C:\xampp\htdocs\ServizioSociale\vendor\codeigniter4\framework\system\CLI\Commands.php(65): CodeIgniter\Commands\Database\Seed->run(Array)
+#6 C:\xampp\htdocs\ServizioSociale\vendor\codeigniter4\framework\system\CLI\Console.php(37): CodeIgniter\CLI\Commands->run('db:seed', Array)
+#7 C:\xampp\htdocs\ServizioSociale\spark(102): CodeIgniter\CLI\Console->run()
+#8 {main}
+CRITICAL - 2023-10-06 08:50:30 --> Unable to connect to the database.
+Main connection [MySQLi]: Access denied for user '****'@'localhost' (using password: YES)
+in SYSTEMPATH\Database\BaseConnection.php on line 427.
+ 1 SYSTEMPATH\Database\Database.php(66): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH\Database\Config.php(108): CodeIgniter\Database\Database->loadForge(Object(CodeIgniter\Database\MySQLi\Connection))
+ 3 SYSTEMPATH\Database\Seeder.php(97): CodeIgniter\Database\Config::forge(null)
+ 4 SYSTEMPATH\Commands\Database\Seed.php(69): CodeIgniter\Database\Seeder->__construct(Object(Config\Database))
+ 5 SYSTEMPATH\CLI\Commands.php(65): CodeIgniter\Commands\Database\Seed->run([...])
+ 6 SYSTEMPATH\CLI\Console.php(37): CodeIgniter\CLI\Commands->run('db:seed', [...])
+ 7 ROOTPATH\spark(102): CodeIgniter\CLI\Console->run()
+ERROR - 2023-10-06 08:51:49 --> Error connecting to the database: mysqli_sql_exception: Access denied for user 'admin'@'localhost' (using password: YES) in C:\xampp\htdocs\ServizioSociale\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php:184
+Stack trace:
+#0 C:\xampp\htdocs\ServizioSociale\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php(184): mysqli->real_connect('localhost', 'admin', Object(SensitiveParameterValue), 'codeigniter4_ap...', 3306, '', 0)
+#1 C:\xampp\htdocs\ServizioSociale\vendor\codeigniter4\framework\system\Database\BaseConnection.php(391): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#2 C:\xampp\htdocs\ServizioSociale\vendor\codeigniter4\framework\system\Database\Database.php(66): CodeIgniter\Database\BaseConnection->initialize()
+#3 C:\xampp\htdocs\ServizioSociale\vendor\codeigniter4\framework\system\Database\Config.php(108): CodeIgniter\Database\Database->loadForge(Object(CodeIgniter\Database\MySQLi\Connection))
+#4 C:\xampp\htdocs\ServizioSociale\vendor\codeigniter4\framework\system\Database\Seeder.php(97): CodeIgniter\Database\Config::forge(NULL)
+#5 C:\xampp\htdocs\ServizioSociale\vendor\codeigniter4\framework\system\Commands\Database\Seed.php(69): CodeIgniter\Database\Seeder->__construct(Object(Config\Database))
+#6 C:\xampp\htdocs\ServizioSociale\vendor\codeigniter4\framework\system\CLI\Commands.php(65): CodeIgniter\Commands\Database\Seed->run(Array)
+#7 C:\xampp\htdocs\ServizioSociale\vendor\codeigniter4\framework\system\CLI\Console.php(37): CodeIgniter\CLI\Commands->run('db:seed', Array)
+#8 C:\xampp\htdocs\ServizioSociale\spark(102): CodeIgniter\CLI\Console->run()
+#9 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: Access denied for user '****'@'localhost' (using password: YES) in C:\xampp\htdocs\ServizioSociale\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php:229
+Stack trace:
+#0 C:\xampp\htdocs\ServizioSociale\vendor\codeigniter4\framework\system\Database\BaseConnection.php(391): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 C:\xampp\htdocs\ServizioSociale\vendor\codeigniter4\framework\system\Database\Database.php(66): CodeIgniter\Database\BaseConnection->initialize()
+#2 C:\xampp\htdocs\ServizioSociale\vendor\codeigniter4\framework\system\Database\Config.php(108): CodeIgniter\Database\Database->loadForge(Object(CodeIgniter\Database\MySQLi\Connection))
+#3 C:\xampp\htdocs\ServizioSociale\vendor\codeigniter4\framework\system\Database\Seeder.php(97): CodeIgniter\Database\Config::forge(NULL)
+#4 C:\xampp\htdocs\ServizioSociale\vendor\codeigniter4\framework\system\Commands\Database\Seed.php(69): CodeIgniter\Database\Seeder->__construct(Object(Config\Database))
+#5 C:\xampp\htdocs\ServizioSociale\vendor\codeigniter4\framework\system\CLI\Commands.php(65): CodeIgniter\Commands\Database\Seed->run(Array)
+#6 C:\xampp\htdocs\ServizioSociale\vendor\codeigniter4\framework\system\CLI\Console.php(37): CodeIgniter\CLI\Commands->run('db:seed', Array)
+#7 C:\xampp\htdocs\ServizioSociale\spark(102): CodeIgniter\CLI\Console->run()
+#8 {main}
+CRITICAL - 2023-10-06 08:51:49 --> Unable to connect to the database.
+Main connection [MySQLi]: Access denied for user '****'@'localhost' (using password: YES)
+in SYSTEMPATH\Database\BaseConnection.php on line 427.
+ 1 SYSTEMPATH\Database\Database.php(66): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH\Database\Config.php(108): CodeIgniter\Database\Database->loadForge(Object(CodeIgniter\Database\MySQLi\Connection))
+ 3 SYSTEMPATH\Database\Seeder.php(97): CodeIgniter\Database\Config::forge(null)
+ 4 SYSTEMPATH\Commands\Database\Seed.php(69): CodeIgniter\Database\Seeder->__construct(Object(Config\Database))
+ 5 SYSTEMPATH\CLI\Commands.php(65): CodeIgniter\Commands\Database\Seed->run([...])
+ 6 SYSTEMPATH\CLI\Console.php(37): CodeIgniter\CLI\Commands->run('db:seed', [...])
+ 7 ROOTPATH\spark(102): CodeIgniter\CLI\Console->run()
+ERROR - 2023-10-06 08:52:38 --> Error connecting to the database: mysqli_sql_exception: Access denied for user 'admin'@'localhost' (using password: YES) in C:\xampp\htdocs\ServizioSociale\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php:184
+Stack trace:
+#0 C:\xampp\htdocs\ServizioSociale\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php(184): mysqli->real_connect('localhost', 'admin', Object(SensitiveParameterValue), 'codeigniter4_ap...', 3306, '', 0)
+#1 C:\xampp\htdocs\ServizioSociale\vendor\codeigniter4\framework\system\Database\BaseConnection.php(391): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#2 C:\xampp\htdocs\ServizioSociale\vendor\codeigniter4\framework\system\Database\Database.php(66): CodeIgniter\Database\BaseConnection->initialize()
+#3 C:\xampp\htdocs\ServizioSociale\vendor\codeigniter4\framework\system\Database\Config.php(108): CodeIgniter\Database\Database->loadForge(Object(CodeIgniter\Database\MySQLi\Connection))
+#4 C:\xampp\htdocs\ServizioSociale\vendor\codeigniter4\framework\system\Database\Seeder.php(97): CodeIgniter\Database\Config::forge(NULL)
+#5 C:\xampp\htdocs\ServizioSociale\vendor\codeigniter4\framework\system\Commands\Database\Seed.php(69): CodeIgniter\Database\Seeder->__construct(Object(Config\Database))
+#6 C:\xampp\htdocs\ServizioSociale\vendor\codeigniter4\framework\system\CLI\Commands.php(65): CodeIgniter\Commands\Database\Seed->run(Array)
+#7 C:\xampp\htdocs\ServizioSociale\vendor\codeigniter4\framework\system\CLI\Console.php(37): CodeIgniter\CLI\Commands->run('db:seed', Array)
+#8 C:\xampp\htdocs\ServizioSociale\spark(102): CodeIgniter\CLI\Console->run()
+#9 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: Access denied for user '****'@'localhost' (using password: YES) in C:\xampp\htdocs\ServizioSociale\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php:229
+Stack trace:
+#0 C:\xampp\htdocs\ServizioSociale\vendor\codeigniter4\framework\system\Database\BaseConnection.php(391): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 C:\xampp\htdocs\ServizioSociale\vendor\codeigniter4\framework\system\Database\Database.php(66): CodeIgniter\Database\BaseConnection->initialize()
+#2 C:\xampp\htdocs\ServizioSociale\vendor\codeigniter4\framework\system\Database\Config.php(108): CodeIgniter\Database\Database->loadForge(Object(CodeIgniter\Database\MySQLi\Connection))
+#3 C:\xampp\htdocs\ServizioSociale\vendor\codeigniter4\framework\system\Database\Seeder.php(97): CodeIgniter\Database\Config::forge(NULL)
+#4 C:\xampp\htdocs\ServizioSociale\vendor\codeigniter4\framework\system\Commands\Database\Seed.php(69): CodeIgniter\Database\Seeder->__construct(Object(Config\Database))
+#5 C:\xampp\htdocs\ServizioSociale\vendor\codeigniter4\framework\system\CLI\Commands.php(65): CodeIgniter\Commands\Database\Seed->run(Array)
+#6 C:\xampp\htdocs\ServizioSociale\vendor\codeigniter4\framework\system\CLI\Console.php(37): CodeIgniter\CLI\Commands->run('db:seed', Array)
+#7 C:\xampp\htdocs\ServizioSociale\spark(102): CodeIgniter\CLI\Console->run()
+#8 {main}
+CRITICAL - 2023-10-06 08:52:38 --> Unable to connect to the database.
+Main connection [MySQLi]: Access denied for user '****'@'localhost' (using password: YES)
+in SYSTEMPATH\Database\BaseConnection.php on line 427.
+ 1 SYSTEMPATH\Database\Database.php(66): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH\Database\Config.php(108): CodeIgniter\Database\Database->loadForge(Object(CodeIgniter\Database\MySQLi\Connection))
+ 3 SYSTEMPATH\Database\Seeder.php(97): CodeIgniter\Database\Config::forge(null)
+ 4 SYSTEMPATH\Commands\Database\Seed.php(69): CodeIgniter\Database\Seeder->__construct(Object(Config\Database))
+ 5 SYSTEMPATH\CLI\Commands.php(65): CodeIgniter\Commands\Database\Seed->run([...])
+ 6 SYSTEMPATH\CLI\Console.php(37): CodeIgniter\CLI\Commands->run('db:seed', [...])
+ 7 ROOTPATH\spark(102): CodeIgniter\CLI\Console->run()
+ERROR - 2023-10-06 08:53:10 --> Error connecting to the database: mysqli_sql_exception: Access denied for user 'admin'@'localhost' (using password: YES) in C:\xampp\htdocs\ServizioSociale\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php:184
+Stack trace:
+#0 C:\xampp\htdocs\ServizioSociale\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php(184): mysqli->real_connect('localhost', 'admin', Object(SensitiveParameterValue), 'codeigniter4_ap...', 3306, '', 0)
+#1 C:\xampp\htdocs\ServizioSociale\vendor\codeigniter4\framework\system\Database\BaseConnection.php(391): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#2 C:\xampp\htdocs\ServizioSociale\vendor\codeigniter4\framework\system\Database\Database.php(66): CodeIgniter\Database\BaseConnection->initialize()
+#3 C:\xampp\htdocs\ServizioSociale\vendor\codeigniter4\framework\system\Database\Config.php(108): CodeIgniter\Database\Database->loadForge(Object(CodeIgniter\Database\MySQLi\Connection))
+#4 C:\xampp\htdocs\ServizioSociale\vendor\codeigniter4\framework\system\Database\Seeder.php(97): CodeIgniter\Database\Config::forge(NULL)
+#5 C:\xampp\htdocs\ServizioSociale\vendor\codeigniter4\framework\system\Commands\Database\Seed.php(69): CodeIgniter\Database\Seeder->__construct(Object(Config\Database))
+#6 C:\xampp\htdocs\ServizioSociale\vendor\codeigniter4\framework\system\CLI\Commands.php(65): CodeIgniter\Commands\Database\Seed->run(Array)
+#7 C:\xampp\htdocs\ServizioSociale\vendor\codeigniter4\framework\system\CLI\Console.php(37): CodeIgniter\CLI\Commands->run('db:seed', Array)
+#8 C:\xampp\htdocs\ServizioSociale\spark(102): CodeIgniter\CLI\Console->run()
+#9 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: Access denied for user '****'@'localhost' (using password: YES) in C:\xampp\htdocs\ServizioSociale\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php:229
+Stack trace:
+#0 C:\xampp\htdocs\ServizioSociale\vendor\codeigniter4\framework\system\Database\BaseConnection.php(391): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 C:\xampp\htdocs\ServizioSociale\vendor\codeigniter4\framework\system\Database\Database.php(66): CodeIgniter\Database\BaseConnection->initialize()
+#2 C:\xampp\htdocs\ServizioSociale\vendor\codeigniter4\framework\system\Database\Config.php(108): CodeIgniter\Database\Database->loadForge(Object(CodeIgniter\Database\MySQLi\Connection))
+#3 C:\xampp\htdocs\ServizioSociale\vendor\codeigniter4\framework\system\Database\Seeder.php(97): CodeIgniter\Database\Config::forge(NULL)
+#4 C:\xampp\htdocs\ServizioSociale\vendor\codeigniter4\framework\system\Commands\Database\Seed.php(69): CodeIgniter\Database\Seeder->__construct(Object(Config\Database))
+#5 C:\xampp\htdocs\ServizioSociale\vendor\codeigniter4\framework\system\CLI\Commands.php(65): CodeIgniter\Commands\Database\Seed->run(Array)
+#6 C:\xampp\htdocs\ServizioSociale\vendor\codeigniter4\framework\system\CLI\Console.php(37): CodeIgniter\CLI\Commands->run('db:seed', Array)
+#7 C:\xampp\htdocs\ServizioSociale\spark(102): CodeIgniter\CLI\Console->run()
+#8 {main}
+CRITICAL - 2023-10-06 08:53:10 --> Unable to connect to the database.
+Main connection [MySQLi]: Access denied for user '****'@'localhost' (using password: YES)
+in SYSTEMPATH\Database\BaseConnection.php on line 427.
+ 1 SYSTEMPATH\Database\Database.php(66): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH\Database\Config.php(108): CodeIgniter\Database\Database->loadForge(Object(CodeIgniter\Database\MySQLi\Connection))
+ 3 SYSTEMPATH\Database\Seeder.php(97): CodeIgniter\Database\Config::forge(null)
+ 4 SYSTEMPATH\Commands\Database\Seed.php(69): CodeIgniter\Database\Seeder->__construct(Object(Config\Database))
+ 5 SYSTEMPATH\CLI\Commands.php(65): CodeIgniter\Commands\Database\Seed->run([...])
+ 6 SYSTEMPATH\CLI\Console.php(37): CodeIgniter\CLI\Commands->run('db:seed', [...])
+ 7 ROOTPATH\spark(102): CodeIgniter\CLI\Console->run()
+ERROR - 2023-10-06 17:47:46 --> Error connecting to the database: mysqli_sql_exception: Access denied for user 'admin'@'localhost' (using password: YES) in C:\xampp\htdocs\ServizioSociale\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php:184
+Stack trace:
+#0 C:\xampp\htdocs\ServizioSociale\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php(184): mysqli->real_connect('localhost', 'admin', Object(SensitiveParameterValue), 'codeigniter4_ap...', 3306, '', 0)
+#1 C:\xampp\htdocs\ServizioSociale\vendor\codeigniter4\framework\system\Database\BaseConnection.php(391): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#2 C:\xampp\htdocs\ServizioSociale\vendor\codeigniter4\framework\system\Database\Database.php(66): CodeIgniter\Database\BaseConnection->initialize()
+#3 C:\xampp\htdocs\ServizioSociale\vendor\codeigniter4\framework\system\Database\Config.php(108): CodeIgniter\Database\Database->loadForge(Object(CodeIgniter\Database\MySQLi\Connection))
+#4 C:\xampp\htdocs\ServizioSociale\vendor\codeigniter4\framework\system\Database\Seeder.php(97): CodeIgniter\Database\Config::forge(NULL)
+#5 C:\xampp\htdocs\ServizioSociale\vendor\codeigniter4\framework\system\Commands\Database\Seed.php(69): CodeIgniter\Database\Seeder->__construct(Object(Config\Database))
+#6 C:\xampp\htdocs\ServizioSociale\vendor\codeigniter4\framework\system\CLI\Commands.php(65): CodeIgniter\Commands\Database\Seed->run(Array)
+#7 C:\xampp\htdocs\ServizioSociale\vendor\codeigniter4\framework\system\CLI\Console.php(37): CodeIgniter\CLI\Commands->run('db:seed', Array)
+#8 C:\xampp\htdocs\ServizioSociale\spark(102): CodeIgniter\CLI\Console->run()
+#9 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: Access denied for user '****'@'localhost' (using password: YES) in C:\xampp\htdocs\ServizioSociale\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php:229
+Stack trace:
+#0 C:\xampp\htdocs\ServizioSociale\vendor\codeigniter4\framework\system\Database\BaseConnection.php(391): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 C:\xampp\htdocs\ServizioSociale\vendor\codeigniter4\framework\system\Database\Database.php(66): CodeIgniter\Database\BaseConnection->initialize()
+#2 C:\xampp\htdocs\ServizioSociale\vendor\codeigniter4\framework\system\Database\Config.php(108): CodeIgniter\Database\Database->loadForge(Object(CodeIgniter\Database\MySQLi\Connection))
+#3 C:\xampp\htdocs\ServizioSociale\vendor\codeigniter4\framework\system\Database\Seeder.php(97): CodeIgniter\Database\Config::forge(NULL)
+#4 C:\xampp\htdocs\ServizioSociale\vendor\codeigniter4\framework\system\Commands\Database\Seed.php(69): CodeIgniter\Database\Seeder->__construct(Object(Config\Database))
+#5 C:\xampp\htdocs\ServizioSociale\vendor\codeigniter4\framework\system\CLI\Commands.php(65): CodeIgniter\Commands\Database\Seed->run(Array)
+#6 C:\xampp\htdocs\ServizioSociale\vendor\codeigniter4\framework\system\CLI\Console.php(37): CodeIgniter\CLI\Commands->run('db:seed', Array)
+#7 C:\xampp\htdocs\ServizioSociale\spark(102): CodeIgniter\CLI\Console->run()
+#8 {main}
+CRITICAL - 2023-10-06 17:47:46 --> Unable to connect to the database.
+Main connection [MySQLi]: Access denied for user '****'@'localhost' (using password: YES)
+in SYSTEMPATH\Database\BaseConnection.php on line 427.
+ 1 SYSTEMPATH\Database\Database.php(66): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH\Database\Config.php(108): CodeIgniter\Database\Database->loadForge(Object(CodeIgniter\Database\MySQLi\Connection))
+ 3 SYSTEMPATH\Database\Seeder.php(97): CodeIgniter\Database\Config::forge(null)
+ 4 SYSTEMPATH\Commands\Database\Seed.php(69): CodeIgniter\Database\Seeder->__construct(Object(Config\Database))
+ 5 SYSTEMPATH\CLI\Commands.php(65): CodeIgniter\Commands\Database\Seed->run([...])
+ 6 SYSTEMPATH\CLI\Console.php(37): CodeIgniter\CLI\Commands->run('db:seed', [...])
+ 7 ROOTPATH\spark(102): CodeIgniter\CLI\Console->run()
+ERROR - 2023-10-06 17:54:10 --> Error connecting to the database: mysqli_sql_exception: Access denied for user 'admin'@'localhost' (using password: YES) in C:\xampp\htdocs\ServizioSociale\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php:184
+Stack trace:
+#0 C:\xampp\htdocs\ServizioSociale\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php(184): mysqli->real_connect('localhost', 'admin', Object(SensitiveParameterValue), 'codeigniter4_ap...', 3306, '', 0)
+#1 C:\xampp\htdocs\ServizioSociale\vendor\codeigniter4\framework\system\Database\BaseConnection.php(391): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#2 C:\xampp\htdocs\ServizioSociale\vendor\codeigniter4\framework\system\Database\Database.php(66): CodeIgniter\Database\BaseConnection->initialize()
+#3 C:\xampp\htdocs\ServizioSociale\vendor\codeigniter4\framework\system\Database\Config.php(108): CodeIgniter\Database\Database->loadForge(Object(CodeIgniter\Database\MySQLi\Connection))
+#4 C:\xampp\htdocs\ServizioSociale\vendor\codeigniter4\framework\system\Database\Seeder.php(97): CodeIgniter\Database\Config::forge(NULL)
+#5 C:\xampp\htdocs\ServizioSociale\vendor\codeigniter4\framework\system\Commands\Database\Seed.php(69): CodeIgniter\Database\Seeder->__construct(Object(Config\Database))
+#6 C:\xampp\htdocs\ServizioSociale\vendor\codeigniter4\framework\system\CLI\Commands.php(65): CodeIgniter\Commands\Database\Seed->run(Array)
+#7 C:\xampp\htdocs\ServizioSociale\vendor\codeigniter4\framework\system\CLI\Console.php(37): CodeIgniter\CLI\Commands->run('db:seed', Array)
+#8 C:\xampp\htdocs\ServizioSociale\spark(102): CodeIgniter\CLI\Console->run()
+#9 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: Access denied for user '****'@'localhost' (using password: YES) in C:\xampp\htdocs\ServizioSociale\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php:229
+Stack trace:
+#0 C:\xampp\htdocs\ServizioSociale\vendor\codeigniter4\framework\system\Database\BaseConnection.php(391): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 C:\xampp\htdocs\ServizioSociale\vendor\codeigniter4\framework\system\Database\Database.php(66): CodeIgniter\Database\BaseConnection->initialize()
+#2 C:\xampp\htdocs\ServizioSociale\vendor\codeigniter4\framework\system\Database\Config.php(108): CodeIgniter\Database\Database->loadForge(Object(CodeIgniter\Database\MySQLi\Connection))
+#3 C:\xampp\htdocs\ServizioSociale\vendor\codeigniter4\framework\system\Database\Seeder.php(97): CodeIgniter\Database\Config::forge(NULL)
+#4 C:\xampp\htdocs\ServizioSociale\vendor\codeigniter4\framework\system\Commands\Database\Seed.php(69): CodeIgniter\Database\Seeder->__construct(Object(Config\Database))
+#5 C:\xampp\htdocs\ServizioSociale\vendor\codeigniter4\framework\system\CLI\Commands.php(65): CodeIgniter\Commands\Database\Seed->run(Array)
+#6 C:\xampp\htdocs\ServizioSociale\vendor\codeigniter4\framework\system\CLI\Console.php(37): CodeIgniter\CLI\Commands->run('db:seed', Array)
+#7 C:\xampp\htdocs\ServizioSociale\spark(102): CodeIgniter\CLI\Console->run()
+#8 {main}
+CRITICAL - 2023-10-06 17:54:10 --> Unable to connect to the database.
+Main connection [MySQLi]: Access denied for user '****'@'localhost' (using password: YES)
+in SYSTEMPATH\Database\BaseConnection.php on line 427.
+ 1 SYSTEMPATH\Database\Database.php(66): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH\Database\Config.php(108): CodeIgniter\Database\Database->loadForge(Object(CodeIgniter\Database\MySQLi\Connection))
+ 3 SYSTEMPATH\Database\Seeder.php(97): CodeIgniter\Database\Config::forge(null)
+ 4 SYSTEMPATH\Commands\Database\Seed.php(69): CodeIgniter\Database\Seeder->__construct(Object(Config\Database))
+ 5 SYSTEMPATH\CLI\Commands.php(65): CodeIgniter\Commands\Database\Seed->run([...])
+ 6 SYSTEMPATH\CLI\Console.php(37): CodeIgniter\CLI\Commands->run('db:seed', [...])
+ 7 ROOTPATH\spark(102): CodeIgniter\CLI\Console->run()
+ERROR - 2023-10-06 17:58:32 --> Error connecting to the database: mysqli_sql_exception: Access denied for user 'root'@'localhost' (using password: YES) in C:\xampp\htdocs\ServizioSociale\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php:184
+Stack trace:
+#0 C:\xampp\htdocs\ServizioSociale\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php(184): mysqli->real_connect('localhost', 'root', Object(SensitiveParameterValue), 'codeigniter4_ap...', 3306, '', 0)
+#1 C:\xampp\htdocs\ServizioSociale\vendor\codeigniter4\framework\system\Database\BaseConnection.php(391): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#2 C:\xampp\htdocs\ServizioSociale\vendor\codeigniter4\framework\system\Database\Database.php(66): CodeIgniter\Database\BaseConnection->initialize()
+#3 C:\xampp\htdocs\ServizioSociale\vendor\codeigniter4\framework\system\Database\Config.php(108): CodeIgniter\Database\Database->loadForge(Object(CodeIgniter\Database\MySQLi\Connection))
+#4 C:\xampp\htdocs\ServizioSociale\vendor\codeigniter4\framework\system\Database\Seeder.php(97): CodeIgniter\Database\Config::forge(NULL)
+#5 C:\xampp\htdocs\ServizioSociale\vendor\codeigniter4\framework\system\Commands\Database\Seed.php(69): CodeIgniter\Database\Seeder->__construct(Object(Config\Database))
+#6 C:\xampp\htdocs\ServizioSociale\vendor\codeigniter4\framework\system\CLI\Commands.php(65): CodeIgniter\Commands\Database\Seed->run(Array)
+#7 C:\xampp\htdocs\ServizioSociale\vendor\codeigniter4\framework\system\CLI\Console.php(37): CodeIgniter\CLI\Commands->run('db:seed', Array)
+#8 C:\xampp\htdocs\ServizioSociale\spark(102): CodeIgniter\CLI\Console->run()
+#9 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: Access denied for user '****'@'localhost' (using password: YES) in C:\xampp\htdocs\ServizioSociale\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php:229
+Stack trace:
+#0 C:\xampp\htdocs\ServizioSociale\vendor\codeigniter4\framework\system\Database\BaseConnection.php(391): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 C:\xampp\htdocs\ServizioSociale\vendor\codeigniter4\framework\system\Database\Database.php(66): CodeIgniter\Database\BaseConnection->initialize()
+#2 C:\xampp\htdocs\ServizioSociale\vendor\codeigniter4\framework\system\Database\Config.php(108): CodeIgniter\Database\Database->loadForge(Object(CodeIgniter\Database\MySQLi\Connection))
+#3 C:\xampp\htdocs\ServizioSociale\vendor\codeigniter4\framework\system\Database\Seeder.php(97): CodeIgniter\Database\Config::forge(NULL)
+#4 C:\xampp\htdocs\ServizioSociale\vendor\codeigniter4\framework\system\Commands\Database\Seed.php(69): CodeIgniter\Database\Seeder->__construct(Object(Config\Database))
+#5 C:\xampp\htdocs\ServizioSociale\vendor\codeigniter4\framework\system\CLI\Commands.php(65): CodeIgniter\Commands\Database\Seed->run(Array)
+#6 C:\xampp\htdocs\ServizioSociale\vendor\codeigniter4\framework\system\CLI\Console.php(37): CodeIgniter\CLI\Commands->run('db:seed', Array)
+#7 C:\xampp\htdocs\ServizioSociale\spark(102): CodeIgniter\CLI\Console->run()
+#8 {main}
+CRITICAL - 2023-10-06 17:58:32 --> Unable to connect to the database.
+Main connection [MySQLi]: Access denied for user '****'@'localhost' (using password: YES)
+in SYSTEMPATH\Database\BaseConnection.php on line 427.
+ 1 SYSTEMPATH\Database\Database.php(66): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH\Database\Config.php(108): CodeIgniter\Database\Database->loadForge(Object(CodeIgniter\Database\MySQLi\Connection))
+ 3 SYSTEMPATH\Database\Seeder.php(97): CodeIgniter\Database\Config::forge(null)
+ 4 SYSTEMPATH\Commands\Database\Seed.php(69): CodeIgniter\Database\Seeder->__construct(Object(Config\Database))
+ 5 SYSTEMPATH\CLI\Commands.php(65): CodeIgniter\Commands\Database\Seed->run([...])
+ 6 SYSTEMPATH\CLI\Console.php(37): CodeIgniter\CLI\Commands->run('db:seed', [...])
+ 7 ROOTPATH\spark(102): CodeIgniter\CLI\Console->run()
+CRITICAL - 2023-10-06 18:22:01 --> Class "App\Validation\UserModel" not found
+in APPPATH\Validation\Userrules.php on line 9.
+ 1 SYSTEMPATH\Validation\Validation.php(309): App\Validation\Userrules->validateUser('Kuntakint3', 'email,password', [...], null, 'password')
+ 2 SYSTEMPATH\Validation\Validation.php(195): CodeIgniter\Validation\Validation->processRules('password', 'password', 'Kuntakint3', [...], [...])
+ 3 SYSTEMPATH\Controller.php(150): CodeIgniter\Validation\Validation->run()
+ 4 APPPATH\Controllers\UserController.php(27): CodeIgniter\Controller->validate([...], [...])
+ 5 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\UserController->login()
+ 6 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\UserController))
+ 7 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\ServizioSociale\\public\\index.php')
+CRITICAL - 2023-10-06 18:24:24 --> Class "App\Validation\UserModel" not found
+in APPPATH\Validation\Userrules.php on line 9.
+ 1 SYSTEMPATH\Validation\Validation.php(309): App\Validation\Userrules->validateUser('Kuntakint3', 'email,password', [...], null, 'password')
+ 2 SYSTEMPATH\Validation\Validation.php(195): CodeIgniter\Validation\Validation->processRules('password', 'password', 'Kuntakint3', [...], [...])
+ 3 SYSTEMPATH\Controller.php(150): CodeIgniter\Validation\Validation->run()
+ 4 APPPATH\Controllers\UserController.php(27): CodeIgniter\Controller->validate([...], [...])
+ 5 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\UserController->login()
+ 6 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\UserController))
+ 7 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\ServizioSociale\\public\\index.php')
+CRITICAL - 2023-10-06 18:26:36 --> Class "App\Validation\UserModel" not found
+in APPPATH\Validation\Userrules.php on line 9.
+ 1 SYSTEMPATH\Validation\Validation.php(309): App\Validation\Userrules->validateUser('Kuntakint3', 'email,password', [...], null, 'password')
+ 2 SYSTEMPATH\Validation\Validation.php(195): CodeIgniter\Validation\Validation->processRules('password', 'password', 'Kuntakint3', [...], [...])
+ 3 SYSTEMPATH\Controller.php(150): CodeIgniter\Validation\Validation->run()
+ 4 APPPATH\Controllers\UserController.php(27): CodeIgniter\Controller->validate([...], [...])
+ 5 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\UserController->login()
+ 6 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\UserController))
+ 7 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\ServizioSociale\\public\\index.php')
+CRITICAL - 2023-10-06 18:29:07 --> Class "App\Validation\UserModel" not found
+in APPPATH\Validation\Userrules.php on line 9.
+ 1 SYSTEMPATH\Validation\Validation.php(309): App\Validation\Userrules->validateUser('Kuntakint3', 'email,password', [...], null, 'password')
+ 2 SYSTEMPATH\Validation\Validation.php(195): CodeIgniter\Validation\Validation->processRules('password', 'password', 'Kuntakint3', [...], [...])
+ 3 SYSTEMPATH\Controller.php(150): CodeIgniter\Validation\Validation->run()
+ 4 APPPATH\Controllers\UserController.php(27): CodeIgniter\Controller->validate([...], [...])
+ 5 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\UserController->login()
+ 6 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\UserController))
+ 7 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\ServizioSociale\\public\\index.php')
+INFO - 2023-10-06 18:30:51 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-06 18:30:59 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-10-06 18:30:59 --> Class "App\Validation\UserModel" not found
+in APPPATH\Validation\Userrules.php on line 9.
+ 1 SYSTEMPATH\Validation\Validation.php(309): App\Validation\Userrules->validateUser('Kuntakint3', 'email,password', [...], null, 'password')
+ 2 SYSTEMPATH\Validation\Validation.php(195): CodeIgniter\Validation\Validation->processRules('password', 'password', 'Kuntakint3', [...], [...])
+ 3 SYSTEMPATH\Controller.php(150): CodeIgniter\Validation\Validation->run()
+ 4 APPPATH\Controllers\UserController.php(27): CodeIgniter\Controller->validate([...], [...])
+ 5 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\UserController->login()
+ 6 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\UserController))
+ 7 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\ServizioSociale\\public\\index.php')
+INFO - 2023-10-06 18:34:38 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-06 18:35:20 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-06 18:35:33 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-06 18:35:56 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-06 18:36:06 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-06 18:38:21 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-06 18:38:45 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-06 18:39:06 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-06 18:39:06 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-06 18:39:27 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-06 18:39:27 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-06 18:44:57 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-06 18:47:06 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-06 18:47:06 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-06 23:14:49 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-06 23:14:50 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-06 23:30:23 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.

@@ -1,0 +1,6 @@
+RewriteEngine On
+RewriteBase /serviziosociale/
+
+# Redirect requests to index.php in the public directory
+RewriteCond %{REQUEST_URI} !^/serviziosociale/public/
+RewriteRule ^(.*)$ public/$1 [L]
